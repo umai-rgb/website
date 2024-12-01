@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Personal Website | Umul</title>
+	<style>
+	body {
+background: rgb(96,223,238);
+background: linear-gradient(0deg, rgba(96,223,238,1) 0%, rgba(15,85,114,1) 100%);  font-family: "Poppins", sans-serif;
+        }
+.gallery {
+	text-align: center;
+	padding: 32px;
+	overflow:auto;
+}
+
+.gallery-header h1 {
+	margin: 0;
+	font-size:30px;
+   text-align: center;
+  color: white;
+  margin-bottom: 1rem; 
+}
+
+.gallery-header h3{
+	font-size:20px;
+	margin: 0;
+	position: static; 
+  margin: 0 auto;   
+  text-align: center;
+  margin-bottom: 1rem; 
+  color:aqua;
+}
+
+.gallery .image {
+	display: flex; 
+	gap: 10px; 
+	justify-content: flex-start; 
+	white-space:nowrap;
+}
+
+.gallery .image img {
+	width: 300px; 
+	height: 400px; 
+	object-fit: cover; 
+	border-radius: 10px; 
+	flex:1 1 10px;
+}
+
+</style>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+<!-- clock. javascript -->
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+<!-- clock. javascript ends -->
+
+	<section>
+		<div class="gallery-header">
+		<h1>GALLERY</h1>
+	<h3> <q>Memories are timeless treasure of the heart</q></h3>
+</div>
+
+	<div class="gallery" id="gallery">
+	<div class="image">
+		<img draggable="false" src=".\assets\images\gallery\pic1.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic2.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic3.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic4.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic5.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic6.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic7.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic8.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic9.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic10.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic11.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic12.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic13.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic14.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic15.jpg" alt="">
+		<img draggable="false" src=".\assets\images\gallery\pic16.jpg" alt="">
+
+
+
+		</div>
+</div>
+
+
+	</section>
+	
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal personal website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="hhttps://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed  by <a href="index.html">Umul Umairah</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+

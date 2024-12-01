@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Umul's Website | Eduation</title>
+    </head>
+    <body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+
+<!-- clock start -->
+<div class="clock">
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+	</div>
+<!-- clock ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute"><q>Education is not the learning of facts, but the training of the mind to think.</q></p>
+
+    <div class="box-container">
+	
+	      <div class="box">
+		  
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/elementary.jpg" alt="">
+		</div>
+        <div class="content">
+        <h3>elementary school</h3>
+        <p>Sekolah Rendah Kebangsaan Bandar Baru Bangi</p>
+        <h4>2011-2016 | </h4>
+        </div>
+  </div>
+
+
+      <div class="box">	  	
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/smk.jpg" alt="">
+		</div>
+        <div class="content">
+        <h3>secondary school</h3>
+        <p>Sekolah Menengah Kebangsaan Bandar Baru Bangi</p>
+        <h4>2017-2021 | </h4>
+        </div>
+  </div>
+        <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/skp.jpg" alt="">
+		</div>
+        <div class="content">
+        <h3>Professional Skills Certificate</h3>
+        <p>Unifield International College</p>
+        <h4>2023(6 months) | </h4>
+        </div>
+  </div>
+
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/uitm.jpg" alt="uitm">
+		</a>
+        </div>
+        <div class="content">
+        <h3>Diploma in Information Management</h3>
+        <p>Universiti Teknologi Mara</p>
+        <h4>2022-2024 | Segamat,Johor</h4>
+        </div>
+    
+    </div>
+
+</section>
+<!-- education section ends -->
+  
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal personal website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="hhttps://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed  by <a href="index.html">Umul Umairah</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+</html>

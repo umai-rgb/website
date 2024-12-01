@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Umul's Website | Experience</title>
+</head>
+<body oncontextmenu="return false">
+    
+	<!-- navbar starts -->
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a class="active" href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+ <!-- clock start -->
+<div class="clock">
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+   </div>
+ <!-- clock ends -->
+
+<!-- clock. javascript -->
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+<!-- clock. javascript ends -->
+
+<section class="experience" id="experience" style="background-color: #fff;">
+    <h1 class="heading"><i class="fas fa-briefcase"></i>EXPERIENCE</h1>
+    <div class="job-container">
+      <div class="job-box">
+	  		<a target="_blank" href=".\assets\images/sk.jpg">
+        <img draggable="false" class="img-experience" src=".\assets\images/sk.jpg" alt="">
+		</a>
+        <h3 style="font-size:3rem; margin-bottom:10px; color:#00d9ff; text-align:center;">Part Time</h3>
+        <p style="font-style:italic;">Studio Kembara Sdn. Bhd.</p>
+        <p>2 Month (2023)</p>
+        <ul>
+          <li>Assign to manage merchandise orders for Studio Kemabara Product</li>
+          <li>Assisted in managing product stock and inventory</li>
+          <li>Participate and provide support in any programs and events</li>
+        </ul>
+      </div>
+      <div class="job-box">
+	  <div class="image">
+	  <a target="_self" href=".\assets\images/azzahrah.jpg">
+        <img draggable="false" class="img-experience" src=".\assets\images/azzahrah.jpg" alt="">
+		</a>
+		</div>
+        <h3 style="font-size:3rem; margin-bottom:10px; color:#00d9ff; text-align:center;">Internship</h3>
+        <p style="font-style:italic;">Hospital Islam Az-Zahrah Sdn. Bhd.</p>
+        <p>2 Month (2024)</p>
+        <ul>
+          <li>Assigned to Record Management dDepartment as Record Officer Assistant</li>
+          <li>Assisted in managing patient data and records </li>
+          <li>Helped in file delivery and retrieval</li>
+        </ul>
+      </div>
+      
+    </div>
+   <div class="achievement">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+      </div>
+      <h2 class="achievement-heading">Achievements</h2>
+      <div class="achievement-cards">
+<table class="achievement-table">
+  <thead>
+    <tr>
+      <th style="font-style:italic;">Year</th>
+      <th style="font-style:italic;">Category</th>
+      <th style="font-style:italic;">Title</th>
+      <th style="font-style:italic;">Organizer</th>
+      <th style="font-style:italic;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2016–2019</td>
+      <td>Competition</td>
+      <td>Marching Competitions</td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Team Member</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Leadership</td>
+      <td>Chairperson of Library</td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Managed library operations and activities</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Academic</td>
+      <td>Fine Arts Coursework (Catan)</td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Achieved excellent grade (Cemerlang)</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Program</td>
+      <td>SKP Short Courses</td>
+      <td>Kolej Antarabangsa Unifield</td>
+      <td>Participant in various skills training:
+        <ul>
+          <li>Hotel Management Skills</li>
+          <li>Office Management Skills</li>
+          <li>Business Communication</li>
+          <li>Computer Maintenance</li>
+          <li>Interpersonal Skills</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Volunteer Work</td>
+      <td>Volunteer Program</td>
+      <td>UiTM & Standard Chartered</td>
+      <td>Contributed to event execution</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+  </section>  <!-- skill section end -->
+  
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal personal website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed  by <a href="index.html">Umul Umairah</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+</html>

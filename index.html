@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Personal Website | Umul</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+
+<!-- hero section starts -->
+<section class="home" id="home">
+
+    <div id="particles"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm <span>Umul Umairah</span></h2>
+    <p>Information Management Student <span class="typing-text"></span></p>
+    <a href="about.html" class="btn"><span>About Me</span>
+			  <!-- edit-->
+
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="facebook" aria-label="facebook" href="https://www.facebook.com/umul.jaafar.1" target="_blank"><i class="fab fa-facebook"></i></a></li> 
+          <li><a class="Tiktok" aria-label="Tiktok" href="https://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/umul_jfr/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+		  <!-- edit-->
+
+          
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src=".\assets\images/mai.jpg" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+<!-- clock. javascript -->
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+<!-- clock. javascript ends -->
+
+ <!-- popup ads start -->
+	<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+	<button class="close-btn" onclick="closePopup()">×</button>
+  
+    <video controls autoplay muted loop>
+      <source src=".\assets\video\adsvd.mp4" type="video/mp4">
+    </video>
+    <h2>Special Offer!</h2>
+    <p>Don't miss out on this exclusive deal. Click below to learn more!</p>
+	<a href="https://theordinary.com/en-my/retinol-1-in-squalane-serum-100441.html" target="_blank" class="learn-more-btn">Learn More</a>
+  
+	 </div>
+</div>
+
+<script>
+  window.onload = function() {
+ setTimeout(function() {
+ document.getElementById('popup').style.display = 'flex';
+    }, 3000);
+  };
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+ <!-- popup ads end -->
+ 
+		<!-- contact section starts -->
+	<section class="contact" id="contact">
+		  
+		  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+		  <div class="container">
+			<div class="content">
+			  <div class="image-box">
+				<img draggable="false" src="./assets/images/contact1.png" alt="">
+			  </div>
+			<form id="contact-form">
+			  
+			  <div class="form-group">
+				<div class="field">
+				  <input type="text" name="name" placeholder="Name" required>
+				  <i class='fas fa-user'></i>
+				</div>
+				<div class="field">
+				  <input type="text" name="email" placeholder="Email" required>
+				  <i class='fas fa-envelope'></i>
+				</div>
+				<div class="field">
+				  <input type="text" name="phone" placeholder="Phone">
+				  <i class='fas fa-phone-alt'></i>
+				</div>
+				<div class="message">
+				<textarea placeholder="Message" name="message" required></textarea>
+				<i class="fas fa-comment-dots"></i>
+				</div>
+				</div>
+			  <div class="button-area">
+				<button type="submit">
+				  Submit <i class=" fa fa-paper-plane"></i></button>
+			  </div>
+			</form>
+		  </div>
+		  </div>
+	</section>
+		<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal personal website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="hhttps://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed  by <a href="index.html">Umul Umairah</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+
+</body>
+</html>

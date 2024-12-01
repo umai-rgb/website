@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Umul's Website | About</title>
+    
+	</head>
+    <body oncontextmenu="return false">
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+			<!-- edit-->
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+
+
+<!-- clock. javascript -->
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+<!-- clock. javascript ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/umul.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Umul</h3>
+        <span class="tag">Information Management Student</span>
+        
+        <p>I'm a final semester student of Diploma in Information management, College of Computing, Information and Mathematics of Universiti Teknologi Mara (UiTM), Segamat. 
+		I am very passionate about improving my education especially coding skills and website. </p>
+        
+        <div class="box-container">
+            
+            <div class="box">
+              <p><span> date of birth : </span> 13<sup>th</sup> October 2004</p>
+              <p><span> email : </span> umuljaafar13@gmail.com</p>
+              <p><span> place : </span> Selangor, Malaysia </p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1f145W626FzLV21FK7hDOw1lAoQztNaoJ/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+	 <div class="about-footer">
+	<div class="skill">
+	<h1>MY SKILLS</h1>
+<div class="skill-record">
+      <h4>Record and Data Management</h4>
+      <div class="bar">
+        <span class="progress"></span>
+        <span class="percentage">80%</span>
+      </div>
+    </div>
+    <div class="skill-software">
+      <h4>Software</h4>
+      <div class="bar">
+        <span class="progress"></span>
+        <span class="percentage">70%</span>
+      </div>
+    </div>
+    <div class="skill-programming">
+      <h4>Programming</h4>
+      <div class="bar">
+        <span class="progress"></span>
+        <span class="percentage">30%</span>
+      </div>
+    </div>
+    <div class="skill-communication">
+      <h4>Communication</h4>
+      <div class="bar">
+        <span class="progress"></span>
+        <span class="percentage">60%</span>
+      </div>
+    </div>
+	</div>
+	<!-- hobbies section starts -->
+<div class="hobbies">  
+      <h1>My Hobbies & Interests</h1>
+	      <div class="content">
+      <ol>
+        <li><span>Art</span> - Canvas painting and digital painting.</li>
+        <li><span>Music</span> - Listen and exploring different song.</li>
+        <li><span>Movies</span> - Watch every genre of drama and movies.</li>
+        <li><span>Sports</span> - Marching competitions and outdoor activities.</li>
+        <li><span>Volunteer Work</span> - Community service and charity events.</li>
+      </ol>
+    </div>
+  </div>
+   </div>
+   </div>
+<div class="song-container">
+    <h2>My Favorite Song</h2>
+        <div class="song-title">"Impossible"</div>
+        <div class="song-artist">
+		James arthur
+        </div>
+     <audio controls autoplay muted>
+        <source src=".\assets\video\song1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+            </audio>
+			
+        <div class="song-title">"Steal The Show"</div>
+        <div class="song-artist">
+		Lauv
+        </div>
+     <audio controls autoplay muted>
+        <source src=".\assets\video\song2.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+            </audio>
+
+        </div>   
+<!-- hobbies section ends -->
+
+
+</section>
+<!-- about section ends -->
+</body>
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+ 
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="hhttps://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed  by <a href="index.html">Umul Umairah</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+</html>
